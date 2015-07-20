@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="2">
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_main_zalo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <Button
+            android:id="@+id/btn_Dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_main_dangnhap"
+            android:text="@string/button.text.dang_nhap" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textview.main.dangnhap"
+            android:text="@string/textview.text.dang_nhap"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btn_dangky"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="43dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_main_dangky"
+            android:text="@string/button.text.dang_ky"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textview.main.dangky"
+            android:text="@string/textview.text.dang_ky"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

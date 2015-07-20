@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button.text.dang_nhap">Đăng nhập</string>
+    <string name="button.text.dang_ky">Đăng ký</string>
+
+    <string name="textview.text.dang_nhap">Đăng nhập bằng mật khẩu</string>
+    <string name="textview.text.dang_ky">Đăng ký tài khoản mới bằng số điện thoại</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="button.main.dangnhap">#158fc2</color>
+    <color name="button.main.dangky">#717e88</color>
+    <color name="textview.main.dangnhap">#888888</color>
+    <color name="textview.main.dangky">#878787</color>
+    <color name="fragment.dangnhap.textview.dangnhap">#158fc2</color>
+    <color name="button_pressed">#439ec4</color>
+    <color name="tab_indicator">#125688</color>
+    <color name="menu">#353844</color>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button.main.dangnhap">
+
+        <ImageButton
+            android:id="@+id/mbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fragment_dangnhap_button_back"
+            android:src="@drawable/icon_back1" />
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/mbtn_back"
+            android:text="Chọn quốc gia"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/mbtn_search"
+            android:layout_toRightOf="@+id/tv_head">
+
+            <ImageView
+                android:id="@+id/iv_icon_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_search1" />
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/iv_icon_search"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:hint="Nhap ten de tim kiem"/>
+
+            <TextView
+                android:id="@+id/tv_edit2"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search_line" />
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/tv_edit2"
+                android:background="@null"
+                android:layout_marginLeft="3dp"
+                android:longClickable="false"
+                android:layout_centerVertical="true"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/mbtn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/fragment_dangnhap_button_back"
+                android:src="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/mbtn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fragment_dangnhap_button_back"
+            android:src="@drawable/icon_search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment_main_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/white" />
+
+</LinearLayout>
